@@ -7,15 +7,17 @@ export default function profile() {
       <div className="profile-parent">
         <div className="progile-details">
           <div className="colz">
-            <a href="https://www.linkedin.com/in/zahramammadli/">
-              <i className="fa fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ZahraMammadli">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UC5lAcTea-glwfFR7gmZzl5Q">
-              <i className="fa fa-youtube-square"></i>
-            </a>
+            <div className="colz-icon">
+              <a href="https://www.linkedin.com/in/zahramammadli/">
+                <i className="fa fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ZahraMammadli">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UC5lAcTea-glwfFR7gmZzl5Q">
+                <i className="fa fa-youtube-square"></i>
+              </a>
+            </div>
           </div>
 
           <div className="profile-details-name">
@@ -60,6 +62,9 @@ export default function profile() {
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
