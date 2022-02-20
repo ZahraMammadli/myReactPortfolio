@@ -1,56 +1,40 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import FolderIcon from "@mui/icons-material/Folder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 
-const pages = ["AboutMe", "Portfolio", "Contact", "Profile", "Resume"];
+export default function LabelBottomNavigation() {
+  const [value, setValue] = React.useState("recents");
 
-const ResponsiveAppBar = () => {
-  const [setAnchorElNav] = React.useState(null);
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
-    <AppBar
-      position="static"
-      sx={{
-        backgroundColor: "#59656f",
-      }}
-    >
-      <Container
-        maxWidth="xl"
-        sx={{
-          textAlign: "center",
-        }}
-      >
-        <Toolbar disableGutters>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <BottomNavigation value={value} onChange={handleChange}>
+      <BottomNavigationAction
+        label="Contact"
+        value="ContactMe"
+        icon={<ContactPhoneIcon />}
+      />
+      <BottomNavigationAction
+        label="Favorites"
+        value="favorites"
+        icon={<FavoriteIcon />}
+      />
+      <BottomNavigationAction
+        label="Nearby"
+        value="nearby"
+        icon={<LocationOnIcon />}
+      />
+      <BottomNavigationAction
+        label="Folder"
+        value="folder"
+        icon={<FolderIcon />}
+      />
+    </BottomNavigation>
   );
-};
-export default ResponsiveAppBar;
+}
