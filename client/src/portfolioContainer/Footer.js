@@ -6,17 +6,12 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-const drawerWidth = 0;
-
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "#59656f",
-    top: "auto",
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
+    clear: "both",
+    position: "relative",
+    // width: `calc(100% - ${drawerWidth}px)`,
   },
   footer: {
     fontSize: 30,
@@ -30,13 +25,13 @@ function Footer() {
       <Typography variant="h6" className={classes.footer}>
         <div className="colz">
           <a href="https://www.linkedin.com/in/zahramammadli/">
-            <LinkedInIcon />
+            <LinkedInIcon color="disabled" />
           </a>
           <a href="https://github.com/ZahraMammadli">
-            <GitHubIcon />
+            <GitHubIcon color="disabled" />
           </a>
           <a href="https://www.youtube.com/channel/UC5lAcTea-glwfFR7gmZzl5Q">
-            <YouTubeIcon />
+            <YouTubeIcon color="disabled" />
           </a>
         </div>
       </Typography>

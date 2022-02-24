@@ -18,13 +18,26 @@ export default function Profile() {
           <div className="profile-details-role">
             <div className="about-summary">
               <p className="typewriter">
-                I am deeply impressed when I see smart and beautiful code. These
-                are moments when I feel that we have only touched the surface of
-                what we can do with computers.
+                I am deeply impressed when I see smart and beautiful code that
+                does something I know is hard to accomplish. These are moments
+                when I feel that we have only touched the surface of what we can
+                do with computers, and I know that there is a simple solution to
+                the current programming problem I am facing; I just need to get
+                my head around it.
               </p>
+              <div class="language-list">
+                <p class="language">HTML</p>
+                <p class="language">CSS</p>
+                <p class="language">JavaScript</p>
+                <p class="language">Handlebars</p>
+                <p class="language">Node JS</p>
+                <p class="language">Sequelize</p>
+                <p class="language">MongoDB</p>
+                <p class="language">React</p>
+              </div>
               <Stack spacing={2}>
                 <a href="resume.pdf" download="resume.pdf">
-                  <Button variant="outlined">Resume</Button>
+                  <Button variant="contained">Resume</Button>
                 </a>
               </Stack>
             </div>

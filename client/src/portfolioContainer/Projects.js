@@ -18,6 +18,11 @@ export default function Projects(props) {
         justifyContent: "space-between",
         alignContent: "space-between",
         padding: "3px",
+        filter: "grayscale(90%)",
+        ":hover": {
+          transition: "0.2s",
+          filter: "grayscale(10%)",
+        },
       }}
     >
       <Card sx={{ maxWidth: 345 }}>
@@ -31,8 +36,9 @@ export default function Projects(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
+          <a href={props.github} target="_blank">
+            <Button size="small">Learn More</Button>
+          </a>
         </CardActions>
       </Card>
     </Box>
