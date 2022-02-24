@@ -20,6 +20,12 @@ main {
   margin-top: 10px;
 }
 
+.profile-role-tagline {
+  flex: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 header,
 footer {
   flex: 0 1 auto;
@@ -143,6 +149,11 @@ nav {
 .summary-text {
   width: 40vw;
   text-align: left;
+}
+
+.about-text {
+  width: 40vw;
+  text-align: center;
 }
 
 .emphasise-text {
@@ -276,11 +287,22 @@ nav {
     width: 80%;
   }
 }
+.profile-details-role {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 30px;
+}
 
 /* IMAGE STYLING */
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.profile-options {
+  border-color: #59656f;
 }
 
 .portrait {

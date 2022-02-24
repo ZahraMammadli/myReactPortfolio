@@ -1,39 +1,40 @@
 import * as React from "react";
+
+// Import icons for nice styling of navigation component
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FolderIcon from "@mui/icons-material/Folder";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import InfoIcon from "@mui/icons-material/Info";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import AttachmentIcon from "@mui/icons-material/Attachment";
+import NavNames from "./NavNames";
 
-export default function LabelBottomNavigation() {
-  const [value, setValue] = React.useState("recents");
-
+export default function LabelBottomNavigation({ setCurrDiv, value }) {
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setCurrDiv(newValue);
   };
 
   return (
     <BottomNavigation value={value} onChange={handleChange}>
       <BottomNavigationAction
-        label="Contact"
+        label="AboutMe"
+        value={NavNames.PROFILE}
+        icon={<InfoIcon />}
+      />
+      <BottomNavigationAction
+        label="Projects"
+        value="Projects"
+        icon={<FolderIcon />}
+      />
+      <BottomNavigationAction
+        label="ContactMe"
         value="ContactMe"
         icon={<ContactPhoneIcon />}
       />
       <BottomNavigationAction
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon />}
-      />
-      <BottomNavigationAction
-        label="Nearby"
-        value="nearby"
-        icon={<LocationOnIcon />}
-      />
-      <BottomNavigationAction
-        label="Folder"
-        value="folder"
-        icon={<FolderIcon />}
+        label="Resume"
+        value="Resume"
+        icon={<AttachmentIcon />}
       />
     </BottomNavigation>
   );
