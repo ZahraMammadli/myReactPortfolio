@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/custom-styles.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-
 export default function Profile() {
   return (
     <div className="profile-container">
@@ -37,7 +36,9 @@ export default function Profile() {
               </div>
               <Stack spacing={2}>
                 <a href="resume.pdf" download="resume.pdf">
-                  <Button variant="contained">Resume</Button>
+                  <Button variant="contained" color="grey">
+                    Resume
+                  </Button>
                 </a>
               </Stack>
             </div>

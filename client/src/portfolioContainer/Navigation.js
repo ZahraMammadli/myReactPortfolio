@@ -34,6 +34,8 @@ export default function LabelBottomNavigation({ setCurrDiv, value }) {
       <BottomNavigationAction
         label="Resume"
         value="Resume"
+        href="resume.pdf"
+        download="resume.pdf"
         icon={<AttachmentIcon />}
       />
     </BottomNavigation>
