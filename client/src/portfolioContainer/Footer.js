@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#59656f",
     clear: "both",
     position: "relative",
+    bottom: "0",
     // width: `calc(100% - ${drawerWidth}px)`,
   },
   footer: {
