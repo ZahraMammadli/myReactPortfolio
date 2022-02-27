@@ -25,7 +25,7 @@ Technologies used in this portfolio creation include:
 
 The following animation shows the web application's appearance and functionality:
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./src/images/mockUp.gif)
+![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](static/media/Screen_Recording_2022-02-27_at_13_17_57_AdobeCreativeCloudExpress.gif)
 
 ## License
 
