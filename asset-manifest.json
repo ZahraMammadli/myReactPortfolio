@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/myReactPortfolio/static/css/main.cba2c93a.css",
+    "main.js": "/myReactPortfolio/static/js/main.32eef3f9.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/myReactPortfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/tech-blog.png": "/myReactPortfolio/static/media/tech-blog.254e32579807b98bc837.png",
+    "static/media/universal_directory.png": "/myReactPortfolio/static/media/universal_directory.8aa9f90ffc74ea88a4d6.png",
+    "static/media/note-taker.png": "/myReactPortfolio/static/media/note-taker.d980661459ad156d66e0.png",
+    "static/media/boarding-app.png": "/myReactPortfolio/static/media/boarding-app.14f546fd282b62c1e21a.png",
+    "static/media/codingquizscreenshot.png": "/myReactPortfolio/static/media/codingquizscreenshot.068283825d7788efbe70.png",
+    "static/media/employee-management-system.png": "/myReactPortfolio/static/media/employee-management-system.3d06350be91b420a1dbd.png",
+    "static/media/webDev.svg": "/myReactPortfolio/static/media/webDev.54fd2e94ab613a5583609c97e9380d8a.svg",
+    "index.html": "/myReactPortfolio/index.html",
+    "main.cba2c93a.css.map": "/myReactPortfolio/static/css/main.cba2c93a.css.map",
+    "main.32eef3f9.js.map": "/myReactPortfolio/static/js/main.32eef3f9.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/myReactPortfolio/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cba2c93a.css",
+    "static/js/main.32eef3f9.js"
+  ]
+}
