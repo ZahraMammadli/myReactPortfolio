@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/custom-styles.css";
-import webDev from "../images/webDev.png";
+import webDev from "../images/webDev.svg";
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
           </div>
         </div>
         <div className="home-image">
-          <img src={webDev} alt="This is a Web Dev cartoon from unDraw"></img>
+          <img src={webDev} alt="Proud Coder from unDraw"></img>
         </div>
       </div>
     </section>
