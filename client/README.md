@@ -1,7 +1,7 @@
 # Zahra Mammadli's Portfolio
 
 <br>
-View portfolio live link here: https://zahramammadli.github.io/Portfolio/
+View portfolio live link here: https://zahramammadli.github.io/myReactPortfolio/
 
 ## Introduction
 
@@ -22,6 +22,10 @@ Technologies used in this portfolio creation include:
 - Material UI
 
 ## Mock-up
+
+The following animation shows the web application's appearance and functionality:
+
+![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./src/images/mockUp.gif)
 
 ## License
 
